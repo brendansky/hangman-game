@@ -75,7 +75,9 @@ for (var i = 0; i < userChoice.length; i++) {
                 // if no matches were found //
                 if (wrongThisRound === answer.length) {
                     wrongTotal++;
-                    alert("bad guess");
+                    var doomApproaches = document.getElementById("background");
+                    doomApproaches.classList.add("background"+ wrongTotal );
+                    
                 }
             }
         }
@@ -101,7 +103,7 @@ for (var i = 0; i < userChoice.length; i++) {
             };
         }
 
-        if (wrongTotal === 6) {
+        if (wrongTotal === 7) {
             alert("you lose!");
 
             var gameOver = document.getElementsByClassName("btn");

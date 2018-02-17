@@ -1,25 +1,23 @@
 html, body{
     height: 100%;
     margin: 0;
-    background-color:black;
+    position: relative;
+    z-index: -2;
 
-
-}
-
-.bg{
-    height: 100%;
-    background-image: url("../images/bloody-frame1.png"), url("../images/hangman-background1.jpg");
+    background-image: url("../images/hangman-background1.jpg");
     background-size: cover;
-    background-repeat: no-repeat, no-repeat;
-
+    background-repeat: no-repeat;
 }
-
 
 .jumbotron{
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0);
+
 }
 
 h1{
+    z-index: 2;
+
     padding: 20px;
     border: 10 px solid rgba(85, 25, 25, 1);
     background-color: black;
@@ -28,31 +26,137 @@ h1{
     
 }
 .buttons{
+    z-index: 2;
+
     margin: auto;
     max-width: 60%;
 }
 
+/* hidden letters that make up answer*/
 .letter{
+    z-index: 2;
+
     border: 5px solid rgba(125, 150, 175, .80);
-    background-color: rgba(125, 150, 175, .50);
+    border-radius: 0;
+    background-color: rgba(125, 150, 175, .60);
     padding: 10px;
     margin: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*button keys for user input*/
 .btn{
-    border: 5px solid  rgba(185, 50, 50, .95);
-    background-color: rgba(185, 50, 50, .80);
+    z-index: 2;
+
+    border: 5px solid  rgba(185, 50, 50, .80);
+    border-radius: 0;
+    background-color: rgba(185, 50, 50, .60);
     font-size: 1.5em;
     font-family: 'Courier New', Courier, monospace;
 
 }
 
 .hidden{
-    color: rgba(0, 0, 0, 0)
+    color: rgba(0, 0, 0, 0);
 }
+
+.hidden::selection{
+    color: rgba(0, 0, 0, 0);
+}
+
 .invisible{
     display: hidden;
+}
+
+/* dynamically change background based on in-game progress */
+
+.background1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .3;
+
+    background-image: url("../images/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.background2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .4;
+
+    background-image: url("../images/blood2.png"), url("../images/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.background3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .5;
+
+    background-image: url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.background4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .6;
+
+    background-image: url("../images/blood5.png"), url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.background5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .7;
+
+    background-image: url("../images/blood5.png"), url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.background6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .95;
+
+    background-image: url("../images/blood5.png"), url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png"), url("../images/bloody-frame1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 
