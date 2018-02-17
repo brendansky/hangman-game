@@ -3,6 +3,7 @@ html, body{
     margin: 0;
     position: relative;
     z-index: -2;
+    background-color: black;
 
     background-image: url("../images/hangman-background1.jpg");
     background-size: cover;
@@ -73,15 +74,17 @@ h1{
 .alert{
     border: 1px solid black;
     border-radius: 0;
+    background-color: rgba(0, 0, 0, .60);
+    color: white;
+    padding: 40px 200px 40px 200px;
     position: fixed;
-    color: black;
-    top: 20%;
-    left: 40%;
+    top: 35%;
+    left: 25%;    
 }
 
 a:link{
     text-decoration: none;
-
+    color: white;
 }
 a:hover{
     text-decoration: none;

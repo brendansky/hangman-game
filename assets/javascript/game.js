@@ -1,8 +1,8 @@
 // array of all possible answers //
-var possibleAnswer = ["ZERO", "ONE", "TWO", "THREE", "FOUR", "INCREDIBLE", "SIX", "SEVEN", "EIGHT", "NINE"];
+var possibleAnswer = ["MISSISSIPPI", "NULL", "AMAZON", "AIRPLANE", "DAVINCI", "HEISENBERG", "DHARMA", "VANBUREN", "PASSWORD", "SESAME", "RHYTHM", "CAT", "VENDETTA"];
 
 // chooses a random number 0-9 //
-var n = (Math.floor(Math.random() * 10));
+var n = (Math.floor(Math.random() * 13));
 
 // gets the possible answer with the index of the random number //
 var answer = possibleAnswer[n];
