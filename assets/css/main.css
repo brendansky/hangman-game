@@ -1,17 +1,56 @@
-#buttons{
-    border: 1px solid black;   
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color:black;
+
+
+}
+
+.bg{
+    height: 100%;
+    background-image: url("../images/bloody-frame1.png"), url("../images/hangman-background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
+
+.jumbotron{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+h1{
+    padding: 20px;
+    border: 10 px solid rgba(85, 25, 25, 1);
+    background-color: black;
+    color: rgba(185, 50, 50, 1);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.buttons{
+    margin: auto;
+    max-width: 60%;
 }
 
 .letter{
-    border-bottom: 1px solid black; 
+    border: 5px solid rgba(125, 150, 175, .80);
+    background-color: rgba(125, 150, 175, .50);
+    padding: 10px;
     margin: 5px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.btn{
+    border: 5px solid  rgba(185, 50, 50, .95);
+    background-color: rgba(185, 50, 50, .80);
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 .hidden{
     color: rgba(0, 0, 0, 0)
 }
-
 .invisible{
     display: hidden;
 }
