@@ -1,10 +1,8 @@
 // array of all possible answers //
-
 var possibleAnswer = ["ZERO", "ONE", "TWO", "THREE", "FOUR", "INCREDIBLE", "SIX", "SEVEN", "EIGHT", "NINE"];
 
 // chooses a random number 0-9 //
 var n = (Math.floor(Math.random() * 10));
-alert(possibleAnswer[n]);
 
 // gets the possible answer with the index of the random number //
 var answer = possibleAnswer[n];
@@ -76,8 +74,8 @@ for (var i = 0; i < userChoice.length; i++) {
                 if (wrongThisRound === answer.length) {
                     wrongTotal++;
                     var doomApproaches = document.getElementById("background");
-                    doomApproaches.classList.add("background"+ wrongTotal );
-                    
+                    doomApproaches.classList.add("background" + wrongTotal);
+
                 }
             }
         }
@@ -89,7 +87,18 @@ for (var i = 0; i < userChoice.length; i++) {
         // checks for win or loss condtion //
 
         if (correctTotal === answer.length) {
-            alert("you win!");
+            console.log( "you win");
+            var victory = document.createElement("div");
+            victory.classList.add("alert", "alert-success");
+            victory.setAttribute("role", "alert");
+            victory.innerHTML = "<h2>you win!<h2><a href='index.html'><h2>play again?<h2></a>";
+            console.log( victory ); 
+            var victoryAlert = document.getElementById("body");
+            console.log( victoryAlert);
+
+            victoryAlert.appendChild(victory);
+        
+            
 
             var gameOver = document.getElementsByClassName("btn");
             for (i = 0; i < gameOver.length; i++) {
@@ -104,7 +113,17 @@ for (var i = 0; i < userChoice.length; i++) {
         }
 
         if (wrongTotal === 7) {
-            alert("you lose!");
+            
+            console.log( "you lose");
+            var defeat = document.createElement("div");
+            defeat.classList.add("alert", "alert-primary");
+            defeat.setAttribute("role", "alert");
+            defeat.innerHTML = "<h2>you lose!<h2><a href='index.html'><h2>play again?<h2></a>";
+            console.log( defeat ); 
+            var defeatAlert = document.getElementById("body");
+            console.log( defeatAlert);
+
+            defeatAlert.appendChild(defeat);
 
             var gameOver = document.getElementsByClassName("btn");
             for (i = 0; i < gameOver.length; i++) {

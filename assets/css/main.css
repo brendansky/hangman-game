@@ -25,12 +25,6 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     
 }
-.buttons{
-    z-index: 2;
-
-    margin: auto;
-    max-width: 60%;
-}
 
 /* hidden letters that make up answer*/
 .letter{
@@ -44,7 +38,15 @@ h1{
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 /*button keys for user input*/
+.buttons{
+    z-index: 2;
+
+    margin: auto;
+    max-width: 60%;
+}
+
 .btn{
     z-index: 2;
 
@@ -67,6 +69,50 @@ h1{
 .invisible{
     display: hidden;
 }
+
+.alert{
+    border: 1px solid black;
+    border-radius: 0;
+    position: fixed;
+    color: black;
+    top: 20%;
+    left: 40%;
+}
+
+a:link{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* dynamically change background based on in-game progress */
 
