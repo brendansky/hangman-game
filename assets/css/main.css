@@ -134,11 +134,12 @@ a:hover{
     z-index: -1;
     opacity: .5;
 
-    background-image: url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png");
+    background-image: url("../images/blood2.png"), url("../images/blood3.png");
     background-size: cover;
     background-repeat: no-repeat;
 
 }
+
 .background4{
     position: absolute;
     top: 0;
@@ -153,8 +154,22 @@ a:hover{
     background-repeat: no-repeat;
 
 }
-
 .background5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .65;
+
+    background-image: url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.background6{
     position: absolute;
     top: 0;
     left: 0;
@@ -169,7 +184,22 @@ a:hover{
 
 }
 
-.background6{
+.background7{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    opacity: .75;
+
+    background-image: url("../images/blood5.png"), url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.background8{
     position: absolute;
     top: 0;
     left: 0;
@@ -184,7 +214,8 @@ a:hover{
 
 }
 
-.background7{
+
+.background-dead{
     position: absolute;
     top: 0;
     left: 0;
