@@ -63,6 +63,7 @@ h1{
     color: rgba(0, 0, 0, 0);
 }
 
+/* prevents user from cheating by highlighting hidden letters*/
 .hidden::selection{
     color: rgba(0, 0, 0, 0);
 }
@@ -92,33 +93,8 @@ a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* dynamically change background based on in-game progress */
-
+/*------------------------------------------------------------------------------------*/
 .background1{
     position: absolute;
     top: 0;
@@ -217,7 +193,7 @@ a:hover{
     z-index: -1;
     opacity: .95;
 
-    background-image: url("../images/blood5.png"), url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png"), url("../images/bloody-frame1.png");
+    background-image: url("../images/bloody-frame1.png"), url("../images/blood5.png"), url("../images/blood4.png"), url("../images/blood2.png"), url("../images/blood3.png");
     background-size: cover;
     background-repeat: no-repeat;
 

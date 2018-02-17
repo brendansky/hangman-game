@@ -1,3 +1,7 @@
+// IIFE //
+(function(){
+
+
 // array of all possible answers //
 var possibleAnswer = ["MISSISSIPPI", "NULL", "AMAZON", "AIRPLANE", "DAVINCI", "HEISENBERG", "DHARMA", "VANBUREN", "PASSWORD", "SESAME", "RHYTHM", "CAT", "VENDETTA"];
 
@@ -142,3 +146,5 @@ for (var i = 0; i < userChoice.length; i++) {
     })
 
 }
+
+})();
